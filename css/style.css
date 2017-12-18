@@ -126,26 +126,28 @@ img {
   border-bottom: 2px solid #f2f2f2;
 }
 
-.skills {
-  padding: 25px 0;
-  
-  border-bottom: 2px solid #f2f2f2;
+.resume__title {
+  margin-bottom: 25px;
 }
 
-.skills {
-  display: flex;
-  justify-content: space-around;
+.resume__acquaintance {
+  margin-bottom: 25px;
 }
 
-.skills__item {
-  display: block;
+.main-button {
+  display: inline-block;
+  padding: 10px 20px;
   
-  padding: 25px 0;
+  background: #70da44;
   
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.main-button:hover {
+  background: #84db64;
 }
 
 .portfolio {
@@ -160,15 +162,18 @@ img {
 }
 
 .portfolio__items {
-
+  display: flex;
+  flex-wrap: wrap;
 	
 	margin: 0 -25px;
 }
 
 .portfolio__item {
-	width: calc(100% / 3 - 25px);
+	width: calc(100% / 3 - 50px);
 	margin: 0 25px;
   margin-bottom: 25px;
+  
+  background: #f9f9f9;
 }
 
 .portfolio__item__img img {
@@ -176,8 +181,18 @@ img {
 	height: auto;
 }
 
+.portfolio__item__about__content {
+  padding: 10px;
+}
+
 .contact {
   padding: 25px 0;
+}
+
+@media screen and (max-width: 1366px) {
+  .portfolio__item {
+    width: calc(100% / 2 - 50px);
+  }
 }  
 
 @media screen and (max-width: 768px) {
@@ -198,6 +213,18 @@ img {
 
   .main-wrapper__right-column {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .portfolio__item {
+    width: calc(100% / 1 - 50px);
+  }
+}
+
+@media screen and (max-width: 320px) and (orientation: landscape) {
+  .main-info__title {
+    font-size: 24px;
   }
 }
 	
