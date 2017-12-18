@@ -160,21 +160,25 @@ img {
 }
 
 .portfolio__items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+
+	
+	margin: 0 -25px;
 }
 
 .portfolio__item {
+	width: calc(100% / 3 - 25px);
+	margin: 0 25px;
   margin-bottom: 25px;
 }
 
+.portfolio__item__img img {
+	width: 100%;
+	height: auto;
+}
 
 .contact {
   padding: 25px 0;
-}
-  
+}  
 
 @media screen and (max-width: 768px) {
   .main-wrapper {
