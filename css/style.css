@@ -34,7 +34,7 @@ img {
   
   width: 35%;
   height: 100%;
-  padding: 20px 50px;
+  padding: 28px 50px;
   
   background: url("../img/mbg1.jpg");
   background-position: center;
@@ -216,6 +216,8 @@ img {
   height: 50px;
   margin-left: -25px;
   margin-top: -25px;
+  
+  opacity: 0.9;
 }
 
 .portfolio__item:hover .link-icon {
@@ -261,6 +263,12 @@ img {
   }
 }
 
+@media screen and (max-width: 568px) and (orientation: landscape) {
+  .main-info__title {
+    font-size: 24px;
+  }
+}
+
 @media screen and (max-width: 440px) {
   .portfolio__item {
     width: calc(100% / 1 - 50px);
@@ -268,12 +276,6 @@ img {
 }
 
 @media screen and (max-width: 375px) {
-  .main-info__title {
-    font-size: 24px;
-  }
-}
-
-@media screen and (orientation: landscape) {
   .main-info__title {
     font-size: 24px;
   }
