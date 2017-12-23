@@ -108,6 +108,12 @@ img {
   background-position: center;
 }
 
+.main-info__social-icon_th {
+  background: #ffffff url("../img/8a.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
 .main-wrapper__right-column {
   width: 65%;
   
